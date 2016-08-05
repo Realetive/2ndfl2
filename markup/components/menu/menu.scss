@@ -35,12 +35,16 @@
   }
 
   &_part {
-    margin: 1.5rem 0;
+    margin: 1.5rem 0 -1px;
 
     .menu__item {
       padding-top: 1.5rem;
       border: 1px solid rgb(230, 230, 230);
       border-right: none;
+
+      &_active {
+        border-bottom-color: #fff;
+      }
 
       &:last-of-type {
         border-right: 1px solid rgb(230, 230, 230);

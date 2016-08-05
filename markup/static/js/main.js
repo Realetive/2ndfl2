@@ -1,5 +1,5 @@
 'use strict';
 
-/*
-    This file can be used as entry point for webpack!
- */
+import navbar from 'components/navbar/navbar'; // useBabel: true
+
+console.log(navbar(3));

@@ -1,13 +1,15 @@
 mixin content(data)
   include ../menu/menu
-  .content
-    main.content__main
-      h1.title.title_h1 ПрофСервис
-      p.paragraph.text.text_lead Заказать полный пакет официальных документов, подтверждённых работодателем, для получения:
-    aside.content__aside.text.text_small
-      br
-      p.paragraph Мы предоставляем официальное трудоустройство с телефонным и документальным подтверждением работодателя.
-    +menu('part')
+  section.section.section_header
+    .content
+      main.content__main
+        h1.title.title_h1 ПрофСервис
+        p.paragraph.text.text_lead Заказать полный пакет официальных документов, подтверждённых работодателем, для получения:
+      aside.content__aside.text.text_small
+        br
+        p.paragraph Мы предоставляем официальное трудоустройство с&nbsp;телефонным и&nbsp;документальным подтверждением работодателя.
+      +menu('part')
+  section.section
   //- .content
     main.content__main
       h2.title.title_h2 Кредит

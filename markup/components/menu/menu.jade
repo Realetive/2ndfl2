@@ -4,7 +4,7 @@ mixin menu(data)
       if data == 'part'
         .menu__item
           if item.part
-            h2.text.text_lead.link #{item.part}
+            h2.link.text.text_lead #{item.part}
           if item.desc
             ul.list
               each itemDesc in item.desc
