@@ -1,0 +1,51 @@
+@lost flexbox flex;
+@lost gutter: 1rem;
+
+.menu {
+  lost-center: 100%;
+
+  &__item {
+    lost-column: 1/4 0 0 flex;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    line-height: 3;
+    text-decoration: none;
+    overflow: hidden;
+
+    &_active,
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+  }
+
+  &_menu &__item {
+    white-space: nowrap;
+    cursor: pointer;
+
+    &:last-of-type {
+      // text-align: right;
+    }
+
+    &_active,
+    &:hover,
+    &:focus {
+      background-color: #f0f0f0;
+    }
+  }
+
+  &_part {
+    margin: 1.5rem 0;
+
+    .menu__item {
+      padding-top: 1.5rem;
+      border: 1px solid rgb(230, 230, 230);
+      border-right: none;
+
+      &:last-of-type {
+        border-right: 1px solid rgb(230, 230, 230);
+        word-break: break-all;
+      }
+    }
+  }
+}

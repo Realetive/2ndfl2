@@ -1,0 +1,11 @@
+.content {
+  lost-center: 72rem;
+
+  &__main {
+    lost-column: 2/3 0;
+  }
+
+  &__aside {
+    lost-column: 1/3 1;
+  }
+}

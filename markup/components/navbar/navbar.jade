@@ -1,0 +1,8 @@
+mixin navbar(data)
+  include ../menu/menu
+
+  .navbar
+    .navbar__logo
+      != jadeHelpers.Icon.call(locals, {iconName: 'logo', className: 'icon logo_logo'})
+    .navbar__menu
+      +menu('menu')
